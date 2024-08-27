@@ -1,0 +1,30 @@
+{
+	"title": "WooCommerce Mix and Match Products - Random Pick",
+	"name": "wc-mnm-random-pick",
+	"version": "1.0.0",
+	"description": "Add a mix and match product to the cart with a random configuration.",
+	"main": "Gruntfile.js",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kathyisawesome/wc-mnm-random-pick"
+	},
+	"bugs": {
+		"url": "https://github.com/kathyisawesome/wc-mnm-random-pick/issues"
+	},
+	"author": "helgatheviking",
+	"devDependencies": {
+		"grunt": "~1.6.1",
+		"grunt-contrib-clean": "^2.0.1",
+		"grunt-contrib-compress": "^2.0.0",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-text-replace": "^0.4.0",
+		"load-grunt-tasks": "~5.1.0"
+	},
+	"scripts": {
+		"makepot": "composer run-script makepot",
+		"betarelease": "npm run release",
+		"release": "npm run makepot && grunt release",
+		"zip": "npm run release && grunt zip"
+	}
+}
